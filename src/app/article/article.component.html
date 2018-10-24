@@ -1,0 +1,22 @@
+
+
+
+<div *ngFor="let article of articles$ | async" class="card">
+    <mat-card class="example-card">
+        <mat-card-header>
+          
+          <mat-card-title>{{article.title}}</mat-card-title>
+          <mat-card-subtitle>{{article.pubDate}}</mat-card-subtitle>
+        </mat-card-header>
+       <a href="{{article.link}}"> <img mat-card-image class="img" src="{{article.thumbnail}}" alt="" ></a>
+        <mat-card-content>
+          <p>
+            <span style="color: dodgerblue"> Auteur : </span>{{article.author}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-button href="{{article.link}}">aller à l'article</a>
+          
+        </mat-card-actions>
+      </mat-card>
+    </div>

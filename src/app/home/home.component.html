@@ -1,0 +1,8 @@
+<mat-card class="card">
+
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Saisir l'url RSS"  #url >
+      </mat-form-field>
+      <button mat-stroked-button color="primary" (click)="setRssURL(url.value)" routerLink="/article">Afficher</button>
+
+  </mat-card>
