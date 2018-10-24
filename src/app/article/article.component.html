@@ -1,10 +1,10 @@
 
 
-
+<p>tous les articles</p>
 <div *ngFor="let article of articles$ | async" class="card">
     <mat-card class="example-card">
         <mat-card-header>
-          
+
           <mat-card-title>{{article.title}}</mat-card-title>
           <mat-card-subtitle>{{article.pubDate}}</mat-card-subtitle>
         </mat-card-header>
@@ -16,7 +16,7 @@
         </mat-card-content>
         <mat-card-actions>
           <a mat-button href="{{article.link}}">aller à l'article</a>
-          
+
         </mat-card-actions>
       </mat-card>
     </div>
